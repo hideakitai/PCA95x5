@@ -73,7 +73,6 @@ public:
     void attach(WireType& wire, uint8_t i2c_addr = BASE_I2C_ADDR) {
         this->wire = &wire;
         this->addr = i2c_addr;
-        this->wire->begin(i2c_addr);
     }
 
     uint16_t read() {
