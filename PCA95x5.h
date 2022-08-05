@@ -17,7 +17,7 @@ namespace Reg {
 }
 
 namespace Port {
-    enum Port : uint8_t {
+    enum Port : uint16_t {
         P00,
         P01,
         P02,
@@ -26,14 +26,14 @@ namespace Port {
         P05,
         P06,
         P07,
+        P08,
+        P09,
         P10,
         P11,
         P12,
         P13,
         P14,
         P15,
-        P16,
-        P17,
     };
 }  // namespace Port
 
