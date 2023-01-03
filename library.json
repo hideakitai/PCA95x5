@@ -5,15 +5,21 @@
     "repository":
     {
         "type": "git",
-        "url": "https://github.com/hideakitai/PCA95x5.git"
+        "url": "https://github.com/semcneil/PCA95x5.git"
     },
     "authors":
-    {
-        "name": "Hideaki Tai",
-        "url": "https://github.com/hideakitai",
-        "maintainer": true
-    },
-    "version": "0.1.1",
+    [
+        {
+            "name": "Hideaki Tai",
+            "url": "https://github.com/hideakitai",
+            "maintainer": false
+        },
+        {
+            "name": "Seth McNeill",
+            "url": "https://github.com/semcneil",
+            "maintainer": true
+    ],
+    "version": "0.1.2",
     "license": "MIT",
     "frameworks": "arduino",
     "platforms": "*"
