@@ -1,6 +1,9 @@
 #include <Arduino.h>
 #include <Wire.h>
 
+#ifndef ANITRACKS_PCA95x5
+#define ANITRACKS_PCA95x5
+
 namespace PCA95x5 {
 
 namespace Reg {
@@ -164,3 +167,5 @@ private:
 
 using PCA9535 = PCA95x5::PCA95x5<>;
 using PCA9555 = PCA95x5::PCA95x5<>;
+
+#endif // ANITRACKS_PCA95x5
