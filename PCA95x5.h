@@ -1,3 +1,7 @@
+#pragma once
+#ifndef ARDUINO_PCA95x5_H
+#define ARDUINO_PCA95x5_H
+
 #include <Arduino.h>
 #include <Wire.h>
 
@@ -164,3 +168,5 @@ private:
 
 using PCA9535 = PCA95x5::PCA95x5<>;
 using PCA9555 = PCA95x5::PCA95x5<>;
+
+#endif // ARDUINO_PCA95x5_H
