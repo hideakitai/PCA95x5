@@ -148,7 +148,7 @@ private:
     int8_t read_bytes(const uint8_t dev, const uint8_t reg, uint8_t* data, const uint8_t size) {
         wire->beginTransmission(dev);
         wire->write(reg);
-        wire->endTransmission();
+        status = wire->endTransmission();
         wire->requestFrom(dev, size);
         int8_t count = 0;
         while (wire->available()) data[count++] = wire->read();
