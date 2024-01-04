@@ -18,7 +18,7 @@ void loop() {
         Serial.print("set port high: ");
         Serial.println(i);
 
-        ioex.write(i, PCA95x5::Level::H);
+        ioex.write(static_cast<PCA95x5::Port::Port>(i), PCA95x5::Level::H);
         Serial.println(ioex.read(), BIN);
         delay(500);
     }
@@ -27,7 +27,7 @@ void loop() {
         Serial.print("set port low: ");
         Serial.println(i);
 
-        ioex.write(i, PCA95x5::Level::L);
+        ioex.write(static_cast<PCA95x5::Port::Port>(i), PCA95x5::Level::L);
         Serial.println(ioex.read(), BIN);
         delay(500);
     }
